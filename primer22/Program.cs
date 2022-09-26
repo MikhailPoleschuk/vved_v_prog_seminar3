@@ -9,7 +9,7 @@ int N = Convert.ToInt32(Console.ReadLine());
 int i = 1;
 while (i <= N)
 {
-    int sqr = i*i;
+    double sqr = Math.Pow(i,2); //добавил для запоминая после разбора Math.Pow также нужно использовать Double тк метод Math.Pow возвращает тип данных Double
     Console.WriteLine(sqr);
     i++;
 }
