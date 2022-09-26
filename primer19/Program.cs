@@ -45,17 +45,19 @@ else
         len--;
         i++;
     }
-
+    int pro = 0; // пришлось завести такую переменную чтобы потом проверить если она больше 0, то массивы не равны
     for (i = 0; i < 5; i++)
     {
         // тут проверили поэлементно массивы
         // Console.WriteLine($"Элемент 1 массива {array[i]}");
         // Console.WriteLine($"Элемент 2 массива {array2[i]}");
-        if (array[i] != array2[i])
+
+        if (array[i] != array2[i])  // проверяем массивы
         {
-            Console.WriteLine("неа"); // блин как же тебя отдельно от ага вывести
-            break;
-        }     
+            pro++;
+
+        }
     }
-    Console.WriteLine("ага"); 
+    if (pro > 0) { Console.WriteLine("неа"); }
+    else { Console.WriteLine("ага"); }
 }
